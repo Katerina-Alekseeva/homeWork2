@@ -10,6 +10,7 @@ import cucumber.runtime.junit.Assertions;
 import pages.*;
 import ru.yandex.FirstTest;
 
+import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class MyStepdefs extends FirstTest {
@@ -87,9 +88,12 @@ String beforeSearch;
     public void equalsResults() {
         assertTrue("сохраненное название продукта"+beforeSearch+"отличается от найденого в результате поиска "+afterSearch ,
                 beforeSearch.contains(afterSearch));
+        System.out.println("бла бла");
     }
     @After
     public void close() {
         closeTest();
     }
+
 }
+
