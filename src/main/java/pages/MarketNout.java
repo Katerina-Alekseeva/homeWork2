@@ -1,22 +1,18 @@
 package pages;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import java.util.List;
-import java.util.Map;
-
-import static java.time.Duration.ofSeconds;
 
 public class MarketNout {
     /* Селектор  найденой продукции*/
-    private  String selectorSeachItem ="//div[@aria-label='Результаты поиска']//article//h3//a";
+    private final String selectorSeachItem ="//div[@aria-label='Результаты поиска']//article//h3//a";
     /* Селектор  серого экрана загрузки элеменов*/
-    private String selectorGreyMonitir ="//div[contains(@aria-label,'Результаты поиска')]/child::*[@class]";
+    private final String selectorGreyMonitir ="//div[contains(@aria-label,'Результаты поиска')]/child::*[@class]";
     /* Селектор  кнопки изменения колличесва продукции на странице*/
-    private String selectorCountButton ="//button[@type='button' and @aria-haspopup='true']";
+    private final String selectorCountButton ="//button[@type='button' and @aria-haspopup='true']";
     /* Браузер*/
     WebDriver chromeDriver;
     /*Ожидание */
@@ -26,10 +22,7 @@ public class MarketNout {
     private WebElement fromPrice;
     /* Поле установки максимальной цены*/
     private WebElement toPrice;
-    /*Поле установки модели */
-    private WebElement HP;
-    /*Поле установки модели */
-    private WebElement Linova;
+
     /*Кнопка выбора количества товаров на странице */
     private   WebElement choose;
     /*Поле поиска */
@@ -106,8 +99,7 @@ private WebElement searchButton;
              this.laptops=chromeDriver.findElements(By.xpath(selectorSeachItem));
         return laptops;
          }
-    private  String selectorSeachItems ="//div[@aria-label='Результаты поиска']//article";
-    private String selectorProductName =".//h3//a";
+
 
 }
 

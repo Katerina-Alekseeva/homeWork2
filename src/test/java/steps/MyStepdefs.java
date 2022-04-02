@@ -77,10 +77,10 @@ String beforeSearch;
     public void checkThatTheCorrespondingProductIsBeingSearchedForByTheNameOfTheFirstElement() {
         MarketNout marketNout = new MarketNout(chromeDriver);
          beforeSearch= marketNout.getNameFirstElementSearch();
-        System.out.println(beforeSearch);
+
         marketNout.findFirstLaptopInSearch();
          afterSearch =marketNout.getNameFirstElementSearch();
-        System.out.println(afterSearch);
+
 
     }
     @Then("Equals results")
