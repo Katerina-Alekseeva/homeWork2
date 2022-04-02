@@ -7,8 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="homeWork2" />
+        <module name="cucumberTestApp" />
         <module name="HomeWork1" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cucumberTestApp" options="--add-modules java.base,java.desktop" />
+    </option>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package hooks;
+package ru.yandex.hooks;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;

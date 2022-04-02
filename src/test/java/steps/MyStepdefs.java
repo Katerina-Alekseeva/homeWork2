@@ -15,9 +15,6 @@ import static org.testng.AssertJUnit.assertTrue;
 
 public class MyStepdefs extends FirstTest {
 
-    Market market ;
-    MarketMenu marketMenu ;
-
     @Before
     public void initialization(){
         before();
@@ -36,13 +33,13 @@ public class MyStepdefs extends FirstTest {
 
     @Then("open Menu")
     public void openMenu() {
-        market= new Market(chromeDriver);
+        Market  market= new Market(chromeDriver);
         market.openMenu();
     }
 
     @Then("select a section {string}")
     public void selectASection(String sectionName) {
-       marketMenu= new MarketMenu(chromeDriver);
+        MarketMenu  marketMenu= new MarketMenu(chromeDriver);
         marketMenu.goToPageComp(sectionName);
     }
 
