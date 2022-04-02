@@ -89,6 +89,8 @@ String beforeSearch;
         assertTrue("сохраненное название продукта"+beforeSearch+"отличается от найденого в результате поиска "+afterSearch ,
                 beforeSearch.contains(afterSearch));
         System.out.println("бла бла");
+        System.out.println("бла бла2");
+        System.out.println("бла бла3");
     }
     @After
     public void close() {
